@@ -7,6 +7,12 @@ describe FizzBuzz do
         expect(f.fizz_buzz(6)).to eq("fizz")
     end
 
+    it 'should return "fizz" if the number has a 3 in it' do
+        f = FizzBuzz.new
+        expect(f.fizz_buzz(13)).to eq("fizz")
+        expect(f.fizz_buzz(63)).to eq("fizz")
+    end
+
     it 'should return "buzz" if the number is a multiple of five' do
         f = FizzBuzz.new
         expect(f.fizz_buzz(5)).to eq("buzz")

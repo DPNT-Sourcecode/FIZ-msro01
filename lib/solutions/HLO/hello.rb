@@ -2,7 +2,7 @@
 class Hello
 
   def hello(friend_name)
-    return "Hello world!"
+    return "Hello, World!"
   end
 
 end

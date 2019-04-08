@@ -54,4 +54,10 @@ describe FizzBuzz do
         expect(f.fizz_buzz(2)).to eq("2")
         expect(f.fizz_buzz(7)).to eq("7")
     end 
+
+    it 'it returns "deluxe" if it is greater than 10, all the digits are identical and it does not meet the criteria for fizz or buzz' do
+        f = FizzBuzz.new
+        expect(f.fizz_buzz(11)).to eq("deluxe")
+        expect(f.fizz_buzz(77)).to eq("deluxe")
+    end
 end

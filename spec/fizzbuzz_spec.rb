@@ -25,10 +25,9 @@ describe FizzBuzz do
         expect(f.fizz_buzz(152)).to eq("buzz")
     end 
 
-    it 'should return "fizz buzz" if the number is a multiple of both three and five' do
+    it 'should return "fizz buzz" if the number is a multiple of both three and five but does not contain a 3 or a 5' do
         f = FizzBuzz.new
-        expect(f.fizz_buzz(15)).to eq("fizz buzz")
-        expect(f.fizz_buzz(30)).to eq("fizz buzz")
+        expect(f.fizz_buzz(60)).to eq("fizz buzz")
     end 
 
     it 'should return "fizz buzz" if the number has both a 3 and a 5 in it' do

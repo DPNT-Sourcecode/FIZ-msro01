@@ -55,10 +55,10 @@ describe FizzBuzz do
         expect(f.fizz_buzz(7)).to eq("7")
     end 
 
-    it 'returns "deluxe" if number is even, divisible by 3 and contains a 3 but is not divisible by 5 and does not contain a 5' do
+    it 'returns "fizz deluxe" if number is even, divisible by 3 and contains a 3 but is not divisible by 5 and does not contain a 5' do
         f = FizzBuzz.new
-        expect(f.fizz_buzz(636)).to eq("deluxe")
-        expect(f.fizz_buzz(36)).to eq("deluxe")
+        expect(f.fizz_buzz(636)).to eq("fizz deluxe")
+        expect(f.fizz_buzz(36)).to eq("fizz deluxe")
     end
 
     # it 'returns "fizz deluxe" if number is even, greater than 10, all digits are identical, is divisible by 3 but not 5 and does not contain a 5' do
@@ -81,4 +81,3 @@ describe FizzBuzz do
     #     expect(f.fizz_buzz(5555)).to eq("buzz fake deluxe")
     # end
 end
-

@@ -49,7 +49,3 @@ describe FizzBuzz do
         expect(f.fizz_buzz(7)).to eq("7")
     end 
 end
-
-
-
-

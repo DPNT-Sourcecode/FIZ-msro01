@@ -71,13 +71,13 @@ describe FizzBuzz do
         expect(f.fizz_buzz(77)).to eq("fake deluxe")
     end
 
-    it 'returns "fizz fake deluxe" if number is odd, greater than 10, all the digits are identical and it contains a 3' do
+    it 'returns "fizz fake deluxe" if number is odd, greater than 10, all the digits are identical and it contains a 3 but is not divisible by 5' do
         f = FizzBuzz.new
         expect(f.fizz_buzz(33)).to eq("fizz fake deluxe")
     end
 
-    it 'returns "buzz fake deluxe" if number is odd, greater than 10, all the digits are identical and it contains a 5' do
+    it 'returns "buzz fake deluxe" if number is odd, greater than 10, all the digits are identical and it contains a 5 but is not divisible by 3' do
         f = FizzBuzz.new
-        expect(f.fizz_buzz(555)).to eq("buzz fake deluxe")
+        expect(f.fizz_buzz(5555)).to eq("buzz fake deluxe")
     end
 end

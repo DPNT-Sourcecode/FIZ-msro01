@@ -13,9 +13,8 @@ describe FizzBuzz do
         expect(f.fizz_buzz(63)).to eq("fizz")
     end
 
-    it 'should return "buzz" if the number is a multiple of five' do
+    it 'should return "buzz" if the number is a multiple of five but does not contain a 5' do
         f = FizzBuzz.new
-        expect(f.fizz_buzz(5)).to eq("buzz")
         expect(f.fizz_buzz(10)).to eq("buzz")
     end 
 
@@ -81,4 +80,5 @@ describe FizzBuzz do
     #     expect(f.fizz_buzz(5555)).to eq("buzz fake deluxe")
     # end
 end
+
 

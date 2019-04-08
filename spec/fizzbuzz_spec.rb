@@ -84,8 +84,3 @@ describe FizzBuzz do
     #     expect(f.fizz_buzz(5555)).to eq("buzz fake deluxe")
     # end
 end
-
-
-
-
-

@@ -43,6 +43,12 @@ describe FizzBuzz do
         expect(f.fizz_buzz(320)).to eq("fizz buzz")
     end 
 
+    it 'should return "fizz buzz" if the number has 5 in it and is divisible by 3' do
+        f = FizzBuzz.new
+        expect(f.fizz_buzz(51)).to eq("fizz buzz")
+        expect(f.fizz_buzz(54)).to eq("fizz buzz")
+    end
+
     it 'should return the number (as a string) if the number is not a multiple of five or three' do
         f = FizzBuzz.new
         expect(f.fizz_buzz(2)).to eq("2")

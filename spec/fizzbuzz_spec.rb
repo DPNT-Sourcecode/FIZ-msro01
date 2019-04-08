@@ -21,7 +21,7 @@ describe FizzBuzz do
 
     it 'should return "buzz" if the number has a 5 in it' do
         f = FizzBuzz.new
-        expect(f.fizz_buzz(51)).to eq("buzz")
+        expect(f.fizz_buzz(56)).to eq("buzz")
         expect(f.fizz_buzz(152)).to eq("buzz")
     end 
 
@@ -37,4 +37,5 @@ describe FizzBuzz do
         expect(f.fizz_buzz(7)).to eq("7")
     end 
 end
+
 
